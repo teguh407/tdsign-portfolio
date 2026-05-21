@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0a0a14" />
-  <title>tdsign — Mascot Logo Designer for Streamers & VTubers</title>
-  <meta name="description" content="Premium mascot logos for Twitch streamers, VTubers, and creators. Anime-inspired branding crafted with care by tdsign." />
+  <meta name="theme-color" content="#0a0b1e" />
+  <title>tdsign — Custom Anime Logos & Streamer Branding</title>
+  <meta name="description" content="Custom chibi mascot logos, stream packages, and VTuber branding for streamers and content creators." />
 
-  <!-- OG -->
-  <meta property="og:title" content="tdsign — Mascot Logos for Streamers" />
-  <meta property="og:description" content="Premium anime-inspired mascot branding for Twitch streamers and VTubers." />
+  <meta property="og:title" content="tdsign — Custom Anime Logos & Streamer Branding" />
+  <meta property="og:description" content="Custom chibi mascot logos and branding for streamers, VTubers, and content creators." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/og.svg" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -23,190 +21,179 @@
 </head>
 <body>
 
-  <!-- Background blobs -->
+  <!-- Background -->
   <div class="bg-gradient" aria-hidden="true">
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="blob blob-3"></div>
     <div class="grid-overlay"></div>
+    <div class="sparkles">
+      <span class="sparkle" style="top:8%;left:12%;animation-delay:0s"></span>
+      <span class="sparkle" style="top:18%;left:78%;animation-delay:.6s;width:6px;height:6px"></span>
+      <span class="sparkle" style="top:32%;left:42%;animation-delay:1.2s"></span>
+      <span class="sparkle" style="top:55%;left:8%;animation-delay:.3s"></span>
+      <span class="sparkle" style="top:62%;left:88%;animation-delay:1.8s;width:5px;height:5px"></span>
+      <span class="sparkle" style="top:78%;left:35%;animation-delay:.9s"></span>
+      <span class="sparkle" style="top:88%;left:72%;animation-delay:2.1s"></span>
+    </div>
   </div>
 
   <!-- Nav -->
   <header class="nav">
     <div class="container nav-inner">
       <a href="#" class="logo">
-        <span class="logo-mark">td</span>
-        <span class="logo-text">tdsign</span>
+        <span class="logo-mark"></span>
+        <span>tdsign</span>
       </a>
       <nav class="nav-links">
+        <a href="#" class="active">Home</a>
         <a href="#work">Work</a>
         <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#testimonials">Words</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
       </nav>
-      <a href="#contact" class="btn btn-primary nav-cta">Start a project</a>
+      <a href="#pricing" class="btn btn-primary nav-cta">
+        <span class="sparkle-icon"></span>
+        Order Now
+      </a>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="hero">
+    <div class="tdsign-vertical">TDSIGN STUDIO</div>
     <div class="container">
-      <div class="hero-badge fade-in">
-        <span class="dot"></span>
-        Booking projects for Q3 2026
-      </div>
-      <h1 class="hero-title fade-in" style="animation-delay:.1s">
-        Mascot logos that<br />
-        <span class="gradient-text">make streamers</span><br />
-        unforgettable.
-      </h1>
-      <p class="hero-sub fade-in" style="animation-delay:.2s">
-        Premium anime-inspired branding for Twitch streamers, VTubers, and content creators. Bold characters, clean systems, work that scales from overlay to merch.
-      </p>
-      <div class="hero-cta fade-in" style="animation-delay:.3s">
-        <a href="#work" class="btn btn-primary">View portfolio</a>
-        <a href="#contact" class="btn btn-ghost">
-          Get in touch
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-        </a>
-      </div>
+      <div class="hero-grid">
+        <!-- Left -->
+        <div class="hero-text">
+          <div class="hero-tag fade-in">
+            <span class="sparkle-icon" style="color:var(--c-purple-2);width:10px;height:10px"></span>
+            ANIME DESIGN FOR CREATORS
+          </div>
+          <h1 class="hero-title fade-in" style="animation-delay:.1s">
+            Custom Anime Logos<br />
+            <span class="gradient-text">&amp; Streamer Branding</span>
+          </h1>
+          <p class="hero-sub fade-in" style="animation-delay:.2s">
+            I create unique chibi mascot logos and branding for streamers, VTubers, and content creators who want to stand out.
+          </p>
+          <div class="hero-cta fade-in" style="animation-delay:.3s">
+            <a href="#work" class="btn btn-primary btn-lg">
+              <span class="sparkle-icon"></span>
+              View My Work
+            </a>
+            <a href="#contact" class="btn btn-ghost btn-lg">Start Your Brand</a>
+          </div>
 
-      <div class="hero-stats fade-in" style="animation-delay:.4s">
-        <div class="stat">
-          <div class="stat-num">120+</div>
-          <div class="stat-label">Mascots delivered</div>
+          <div class="hero-stats fade-in" style="animation-delay:.4s">
+            <div class="stat">
+              <div class="stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3 7-7"/><path d="M21 12v6a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2h11"/></svg>
+              </div>
+              <div class="stat-num">200+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat">
+              <div class="stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><circle cx="17" cy="7" r="3"/></svg>
+              </div>
+              <div class="stat-num">150+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat">
+              <div class="stat-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+              </div>
+              <div class="stat-num">5★</div>
+              <div class="stat-label">Fiverr Rating</div>
+            </div>
+            <div class="stat">
+              <div class="stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 7v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V7l-8-5z"/></svg>
+              </div>
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Original Design</div>
+            </div>
+          </div>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <div class="stat-num">48</div>
-          <div class="stat-label">Partner streamers</div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <div class="stat-num">4.9★</div>
-          <div class="stat-label">Avg. rating</div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Hero showcase -->
-    <div class="hero-showcase fade-in" style="animation-delay:.5s" aria-hidden="true">
-      <div class="showcase-card card-1">
-        <div class="showcase-art" data-art="kitsune"></div>
-      </div>
-      <div class="showcase-card card-2">
-        <div class="showcase-art" data-art="dragon"></div>
-      </div>
-      <div class="showcase-card card-3">
-        <div class="showcase-art" data-art="moon"></div>
+        <!-- Right illustration -->
+        <div class="hero-illust">
+          <div class="td-sign-logo" aria-hidden="true">
+            TD
+            <span class="small">SIGN</span>
+          </div>
+
+          <div class="stream-card s1">BE RIGHT BACK</div>
+          <div class="stream-card s2">STARTING SOON</div>
+          <div class="stream-card s3">GETTING READY</div>
+
+          <div class="chibi-hero">
+            <div class="glow"></div>
+            <div class="chibi" aria-label="Chibi mascot — boy with headphones">
+              <div class="hair"></div>
+              <div class="head"></div>
+              <div class="eyes"></div>
+              <div class="mouth"></div>
+              <div class="headphones"></div>
+              <div class="body"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Marquee logos -->
-  <section class="marquee">
-    <div class="marquee-track">
-      <span>Twitch Partners</span><span>•</span>
-      <span>VTuber Studios</span><span>•</span>
-      <span>YouTube Creators</span><span>•</span>
-      <span>Indie Game Devs</span><span>•</span>
-      <span>Esports Teams</span><span>•</span>
-      <span>Discord Communities</span><span>•</span>
-      <span>Twitch Partners</span><span>•</span>
-      <span>VTuber Studios</span><span>•</span>
-      <span>YouTube Creators</span><span>•</span>
-      <span>Indie Game Devs</span><span>•</span>
-    </div>
-  </section>
-
-  <!-- Work / Portfolio -->
+  <!-- Selected Projects -->
   <section id="work" class="section">
     <div class="container">
-      <div class="section-head">
-        <div class="section-label">Selected work</div>
-        <h2 class="section-title">Mascots that <span class="gradient-text">live</span> beyond the stream.</h2>
-        <p class="section-sub">From iconic kitsune avatars to cyber-cute companions — every mascot is built as a full identity system, ready for overlays, emotes, merch, and beyond.</p>
+      <div class="section-head with-link">
+        <div class="head-text">
+          <div class="section-label">Selected Projects</div>
+          <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+          <p class="section-sub">A handful of recent mascot logos shipped to streamers, VTubers, and creators across the world.</p>
+        </div>
+        <a href="#" class="view-all-link">View All Projects →</a>
       </div>
 
-      <div class="portfolio-grid">
-
-        <article class="work-card large">
-          <div class="work-art" data-art="kitsune">
-            <div class="work-tag">Featured · Mascot Identity</div>
-          </div>
-          <div class="work-body">
-            <h3>Kira the Kitsune</h3>
-            <p>Full mascot system for a top-50 Twitch VTuber. Hero pose, expressions, sub-badges, emote pack, and animated overlay variants.</p>
-            <div class="work-tags">
-              <span>VTuber</span><span>Mascot</span><span>Emote pack</span>
-            </div>
+      <div class="portfolio-row">
+        <article class="mascot-card" data-color="blue">
+          <div class="mascot-art"><span class="emoji">👦🏻</span></div>
+          <div class="mascot-info">
+            <h3>Rayzen</h3>
+            <p>Chibi Mascot Logo</p>
           </div>
         </article>
-
-        <article class="work-card">
-          <div class="work-art" data-art="dragon">
-            <div class="work-tag">Logo · Brand</div>
-          </div>
-          <div class="work-body">
-            <h3>Ryūsei Studio</h3>
-            <p>Indie game studio rebrand. Dragon glyph, custom wordmark, in-game UI tokens.</p>
-            <div class="work-tags"><span>Logo</span><span>Brand system</span></div>
+        <article class="mascot-card" data-color="violet">
+          <div class="mascot-art"><span class="emoji">😺</span></div>
+          <div class="mascot-info">
+            <h3>Lunaria</h3>
+            <p>Twitch Streamer Logo</p>
           </div>
         </article>
-
-        <article class="work-card">
-          <div class="work-art" data-art="moon">
-            <div class="work-tag">Mascot · Stream kit</div>
-          </div>
-          <div class="work-body">
-            <h3>Lunari</h3>
-            <p>Soft celestial mascot for a chill ASMR streamer. Transitions, BRB scenes, scene cards.</p>
-            <div class="work-tags"><span>Mascot</span><span>Overlay</span></div>
+        <article class="mascot-card" data-color="cyan">
+          <div class="mascot-art"><span class="emoji">🧑‍🎤</span></div>
+          <div class="mascot-info">
+            <h3>Itsuki</h3>
+            <p>VTuber Logo Design</p>
           </div>
         </article>
-
-        <article class="work-card">
-          <div class="work-art" data-art="cyber">
-            <div class="work-tag">Mascot · Esports</div>
-          </div>
-          <div class="work-body">
-            <h3>NeoFox.gg</h3>
-            <p>Cyber-fox mascot for a competitive Valorant team. Jersey treatment + social kit.</p>
-            <div class="work-tags"><span>Esports</span><span>Identity</span></div>
+        <article class="mascot-card" data-color="pink">
+          <div class="mascot-art"><span class="emoji">🐻</span></div>
+          <div class="mascot-info">
+            <h3>Kuma</h3>
+            <p>YouTube Content Creator</p>
           </div>
         </article>
-
-        <article class="work-card large">
-          <div class="work-art" data-art="phoenix">
-            <div class="work-tag">Featured · Identity System</div>
-          </div>
-          <div class="work-body">
-            <h3>Hibara — Phoenix Idol</h3>
-            <p>Complete persona launch for an indie VTuber idol. Mascot, lore plate, debut graphics, merch-ready vector pack.</p>
-            <div class="work-tags">
-              <span>VTuber</span><span>Launch package</span><span>Merch</span>
-            </div>
+        <article class="mascot-card" data-color="purple">
+          <div class="mascot-art"><span class="emoji">😈</span></div>
+          <div class="mascot-info">
+            <h3>Yami</h3>
+            <p>Twitch Streamer Logo</p>
           </div>
         </article>
-
-        <article class="work-card">
-          <div class="work-art" data-art="cat">
-            <div class="work-tag">Mascot</div>
-          </div>
-          <div class="work-body">
-            <h3>Mochi-chan</h3>
-            <p>Cozy chibi cat mascot for a community Discord server.</p>
-            <div class="work-tags"><span>Chibi</span><span>Community</span></div>
-          </div>
-        </article>
-
-      </div>
-
-      <div class="section-foot">
-        <a href="#contact" class="btn btn-ghost">
-          Want yours next? Let's talk
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </a>
       </div>
     </div>
   </section>
@@ -216,62 +203,54 @@
     <div class="container">
       <div class="section-head">
         <div class="section-label">Services</div>
-        <h2 class="section-title">Everything you need to <span class="gradient-text">go premium</span>.</h2>
+        <h2 class="section-title">What <span class="gradient-text">I Offer</span></h2>
+        <p class="section-sub">Five core services tuned for streamers, VTubers, and digital creators ready to level up their brand.</p>
       </div>
 
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 10c0-1 .5-2 2-2M14 10c0-1 .5-2 2-2M9 16c1 1 2 1.5 3 1.5s2-.5 3-1.5"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="6"/><path d="M8 16l-2 6 6-3 6 3-2-6"/></svg>
           </div>
-          <h3>Mascot Design</h3>
-          <p>Custom anime-style mascots with full expression sheets, pose variations, and ready-to-use vector exports.</p>
-          <div class="service-meta">From $480 · 7–10 days</div>
+          <h3>Chibi Mascot Logo</h3>
+          <p>Custom anime chibi logo that represents your unique identity.</p>
+          <a href="#contact" class="learn-more">Learn More →</a>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M8 22h8M12 19v3"/></svg>
           </div>
-          <h3>Logo & Wordmark</h3>
-          <p>Identity-grade logos with custom typography, glyph variants, and a polished mini brand book.</p>
-          <div class="service-meta">From $260 · 5–7 days</div>
+          <h3>Stream Package</h3>
+          <p>Complete stream package with overlay, alerts, panels, and more.</p>
+          <a href="#contact" class="learn-more">Learn More →</a>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M5 12H1M23 12h-4M19 5l-3 3M8 16l-3 3M19 19l-3-3M8 8L5 5"/><circle cx="12" cy="12" r="4"/></svg>
           </div>
-          <h3>Stream Overlay Kit</h3>
-          <p>Webcam frames, scene transitions, alert graphics, and BRB scenes. Plug-and-play with OBS or Streamlabs.</p>
-          <div class="service-meta">From $320 · 6–9 days</div>
+          <h3>VTuber Branding</h3>
+          <p>Full branding for VTubers including logo, screens, panels, and assets.</p>
+          <a href="#contact" class="learn-more">Learn More →</a>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="9"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 12h18M9 5v14"/></svg>
           </div>
-          <h3>Sub Badges & Emotes</h3>
-          <p>Emote-ready packs sized for Twitch, YouTube, and Discord. Loop-animated variants on request.</p>
-          <div class="service-meta">From $180 · 4–6 days</div>
+          <h3>Social Banner</h3>
+          <p>Banners for YouTube, Twitter, Discord, and other platforms.</p>
+          <a href="#contact" class="learn-more">Learn More →</a>
         </div>
 
         <div class="service-card">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13l2 2 4-4"/></svg>
           </div>
-          <h3>Full Launch Package</h3>
-          <p>Mascot + logo + overlay + emotes + announcement graphics. Ship a complete debut in one go.</p>
-          <div class="service-meta">From $1,200 · 3–4 weeks</div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l4 4L21 6"/></svg>
-          </div>
-          <h3>Brand Refresh</h3>
-          <p>Already streaming? Tighten up your existing mascot and identity for a more premium feel.</p>
-          <div class="service-meta">From $220 · 4–5 days</div>
+          <h3>Custom Illustration</h3>
+          <p>Custom anime illustration for your stream or personal brand.</p>
+          <a href="#contact" class="learn-more">Learn More →</a>
         </div>
       </div>
     </div>
@@ -281,32 +260,38 @@
   <section id="process" class="section">
     <div class="container">
       <div class="section-head">
-        <div class="section-label">Process</div>
-        <h2 class="section-title">A calm, <span class="gradient-text">deliberate</span> way to work.</h2>
-        <p class="section-sub">No frantic revisions, no surprise scope. Just clear stages and proper craft.</p>
+        <div class="section-label">How It Works</div>
+        <h2 class="section-title">My <span class="gradient-text">Process</span></h2>
+        <p class="section-sub">Four calm, deliberate stages — from your first message to final delivery.</p>
       </div>
 
-      <div class="process-grid">
-        <div class="process-step">
-          <div class="process-num">01</div>
-          <h3>Discover</h3>
-          <p>A short intro call to map your character, tone, audience, and platforms. You walk out with a creative brief.</p>
+      <div class="process-wrap">
+        <div class="process-mascot" aria-hidden="true">📱</div>
+
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="process-num">01</div>
+            <h3>Brief</h3>
+            <p>You send me your ideas, references, and details.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num">02</div>
+            <h3>Sketch</h3>
+            <p>I create a sketch concept based on your brief.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num">03</div>
+            <h3>Color &amp; Refine</h3>
+            <p>I color and refine the design until it's perfect.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num">04</div>
+            <h3>Final Delivery</h3>
+            <p>You receive the final files in high quality.</p>
+          </div>
         </div>
-        <div class="process-step">
-          <div class="process-num">02</div>
-          <h3>Sketch</h3>
-          <p>3 distinct directions in rough form. We pick the strongest concept together — no guesswork, no committee.</p>
-        </div>
-        <div class="process-step">
-          <div class="process-num">03</div>
-          <h3>Refine</h3>
-          <p>Color, line, and detail get locked in. Two structured rounds of feedback so things stay tight, not endless.</p>
-        </div>
-        <div class="process-step">
-          <div class="process-num">04</div>
-          <h3>Deliver</h3>
-          <p>You get full vector exports, transparent PNGs, social-ready sizes, and a one-page brand sheet.</p>
-        </div>
+
+        <div class="process-laptop" aria-hidden="true">💻</div>
       </div>
     </div>
   </section>
@@ -314,77 +299,148 @@
   <!-- Testimonials -->
   <section id="testimonials" class="section">
     <div class="container">
-      <div class="section-head">
-        <div class="section-label">Words from creators</div>
-        <h2 class="section-title">People I've had the pleasure of <span class="gradient-text">working with</span>.</h2>
+      <div class="section-head with-link">
+        <div class="head-text">
+          <div class="section-label">Testimonials</div>
+          <h2 class="section-title">What <span class="gradient-text">Clients Say</span></h2>
+          <p class="section-sub">Real words from streamers and creators I've had the pleasure of working with.</p>
+        </div>
+        <a href="#" class="view-all-link">View All Reviews →</a>
       </div>
 
       <div class="testimonials-grid">
         <blockquote class="testimonial">
-          <p>"My channel finally looks like the brand I wanted from day one. The mascot pops on every overlay and feels alive."</p>
-          <footer>
-            <div class="t-avatar" data-avatar="a"></div>
+          <div class="t-quote">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p>Absolutely amazing work! The logo turned out even better than I imagined. Super professional and fast!</p>
+          <footer class="t-foot">
+            <div class="t-avatar">SK</div>
             <div>
-              <div class="t-name">@ayanostream</div>
-              <div class="t-role">Twitch · Just Chatting</div>
+              <div class="t-name">ShadowKaz <span class="t-flag">🇺🇸</span></div>
+              <div class="t-role">Twitch Streamer</div>
             </div>
           </footer>
         </blockquote>
 
         <blockquote class="testimonial">
-          <p>"Smooth, communicative, and the work just hits. tdsign got our team's vibe in the first round of sketches."</p>
-          <footer>
-            <div class="t-avatar" data-avatar="b"></div>
+          <div class="t-quote">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p>tdsign is super talented and easy to work with. My viewers love the new logo and overlays!</p>
+          <footer class="t-foot">
+            <div class="t-avatar">LV</div>
             <div>
-              <div class="t-name">@neofox.gg</div>
-              <div class="t-role">Esports org · Valorant</div>
+              <div class="t-name">LunaVT <span class="t-flag">🇯🇵</span></div>
+              <div class="t-role">VTuber</div>
             </div>
           </footer>
         </blockquote>
 
         <blockquote class="testimonial">
-          <p>"Worth every cent. My emote pack went from 'okay' to instantly recognizable. Subs notice. They care."</p>
-          <footer>
-            <div class="t-avatar" data-avatar="c"></div>
+          <div class="t-quote">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p>Great communication and unbelievable quality. Will definitely come back for more projects!</p>
+          <footer class="t-foot">
+            <div class="t-avatar">KN</div>
             <div>
-              <div class="t-name">@hibara.live</div>
-              <div class="t-role">Indie VTuber idol</div>
-            </div>
-          </footer>
-        </blockquote>
-
-        <blockquote class="testimonial">
-          <p>"The launch package made our debut feel like a proper studio rollout. Everyone asked who designed it."</p>
-          <footer>
-            <div class="t-avatar" data-avatar="d"></div>
-            <div>
-              <div class="t-name">@ryusei.studio</div>
-              <div class="t-role">Indie game studio</div>
+              <div class="t-name">KuroNeko <span class="t-flag">🇩🇪</span></div>
+              <div class="t-role">YouTube Creator</div>
             </div>
           </footer>
         </blockquote>
       </div>
+
+      <div class="t-nav">
+        <button class="t-arrow" aria-label="Previous">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="t-arrow" aria-label="Next">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
     </div>
   </section>
 
-  <!-- CTA / Contact -->
-  <section id="contact" class="section cta-section">
+  <!-- Pricing -->
+  <section id="pricing" class="section">
     <div class="container">
-      <div class="cta-card">
-        <div class="cta-glow" aria-hidden="true"></div>
-        <div class="section-label">Let's build it</div>
-        <h2 class="cta-title">Your mascot is <span class="gradient-text">waiting</span>.</h2>
-        <p class="cta-sub">Tell me about your channel, your audience, and the energy you want. I'll send back availability, scope, and a fixed quote within 24 hours.</p>
-        <div class="cta-actions">
-          <a href="mailto:hello@tdsign.studio" class="btn btn-primary btn-lg">
-            hello@tdsign.studio
-          </a>
-          <a href="https://twitter.com/tdsign" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">
-            DM on Twitter
-          </a>
+      <div class="section-head">
+        <div class="section-label">Pricing</div>
+        <h2 class="section-title">Choose Your <span class="gradient-text">Package</span></h2>
+        <p class="section-sub">Simple, fixed pricing. Pick the tier that fits your launch and you're set.</p>
+      </div>
+
+      <div class="pricing-wrap">
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="price-tier">Basic</div>
+            <div class="price-name">Basic Logo</div>
+            <div class="price-amount"><span class="currency">$</span>25</div>
+            <div class="price-period">one-time</div>
+            <ul class="price-features">
+              <li><span class="price-check"></span>Chibi Mascot Logo</li>
+              <li><span class="price-check"></span>High Resolution PNG</li>
+              <li><span class="price-check"></span>Transparent Background</li>
+              <li><span class="price-check"></span>1 Revision</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost">Order Now</a>
+          </div>
+
+          <div class="price-card popular">
+            <div class="popular-badge">Most Popular</div>
+            <div class="price-tier">Streamer</div>
+            <div class="price-name">Streamer Package</div>
+            <div class="price-amount"><span class="currency">$</span>75</div>
+            <div class="price-period">one-time</div>
+            <ul class="price-features">
+              <li><span class="price-check"></span>Chibi Mascot Logo</li>
+              <li><span class="price-check"></span>Stream Overlay</li>
+              <li><span class="price-check"></span>Alert Box (5 items)</li>
+              <li><span class="price-check"></span>Panel (6 items)</li>
+              <li><span class="price-check"></span>2 Revisions</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Order Now</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-tier">Premium</div>
+            <div class="price-name">Premium Package</div>
+            <div class="price-amount"><span class="currency">$</span>150</div>
+            <div class="price-period">one-time</div>
+            <ul class="price-features">
+              <li><span class="price-check"></span>Everything in Streamer</li>
+              <li><span class="price-check"></span>Starting / BRB / Ending</li>
+              <li><span class="price-check"></span>Animated Logo (GIF)</li>
+              <li><span class="price-check"></span>Custom Emotes (3x)</li>
+              <li><span class="price-check"></span>3 Revisions</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost">Order Now</a>
+          </div>
         </div>
-        <div class="cta-meta">
-          Currently booking · Q3 2026 · 4 spots remaining
+
+        <div class="pricing-mascot" aria-hidden="true">
+          <div class="magic-circle"></div>
+          🧙‍♀️
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="contact" class="final-cta">
+    <div class="container">
+      <div class="final-cta-card">
+        <div class="section-label">Let's Connect</div>
+        <h2 class="final-cta-title">Ready To Build Your <span class="gradient-text">Stream Identity?</span></h2>
+        <p class="final-cta-sub">Let's bring your vision to life and create something awesome.</p>
+        <div class="final-cta-btns">
+          <a href="https://fiverr.com/tdsign" target="_blank" rel="noopener" class="btn btn-white btn-lg">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 16h-1v-3a4 4 0 00-4-4h-7v-1a2 2 0 012-2h2V3h-2a5 5 0 00-5 5v1H7v3h1v4H7v3h7v-3h-2v-4h6v4h-1v3h6v-3z"/></svg>
+            Order via Fiverr
+          </a>
+          <a href="#" class="btn btn-primary btn-lg">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Contact Me
+          </a>
         </div>
       </div>
     </div>
@@ -393,19 +449,17 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="logo-mark">td</span>
+      <a href="#" class="logo">
+        <span class="logo-mark"></span>
         <span>tdsign</span>
-      </div>
-      <div class="footer-meta">
-        <span>Mascot logos for streamers & VTubers</span>
-        <span class="dot-sep">·</span>
-        <span>© 2026 tdsign</span>
-      </div>
-      <div class="footer-links">
-        <a href="https://twitter.com/tdsign" target="_blank" rel="noopener">Twitter</a>
-        <a href="https://instagram.com/tdsign" target="_blank" rel="noopener">Instagram</a>
-        <a href="mailto:hello@tdsign.studio">Email</a>
+      </a>
+      <div class="footer-meta">© 2026 tdsign. All rights reserved.</div>
+      <div class="footer-socials">
+        <a href="#" aria-label="Discord"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4.5A20 20 0 0015.5 3l-.3.5a14 14 0 014 2 17 17 0 00-13 0 14 14 0 014-2L9.5 3A20 20 0 005 4.5C2 9 1 13 1.5 17a18 18 0 005.5 3l1-1.5a13 13 0 01-2-1l.5-.3a14 14 0 0011 0l.5.3a13 13 0 01-2 1l1 1.5a18 18 0 005.5-3c.5-5-.7-9-3-12.5zM9 14.5a2 2 0 110-4 2 2 0 010 4zm6 0a2 2 0 110-4 2 2 0 010 4z"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 3h3l-7 8 8 10h-6l-5-6-5 6H3l7-9-7-9h6l4 5 5-5z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 8a3 3 0 00-2-2c-2-.5-8-.5-10-.5s-8 0-10 .5a3 3 0 00-2 2c-.5 2-.5 4-.5 4s0 2 .5 4a3 3 0 002 2c2 .5 10 .5 10 .5s8 0 10-.5a3 3 0 002-2c.5-2 .5-4 .5-4s0-2-.5-4zM10 15V9l5 3-5 3z"/></svg></a>
+        <a href="mailto:hello@tdsign.studio" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg></a>
       </div>
     </div>
   </footer>

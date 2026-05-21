@@ -2,63 +2,71 @@
 (() => {
   'use strict';
 
-  // Intersection-based reveal for sections / cards
-  const revealTargets = document.querySelectorAll(
-    '.section-head, .work-card, .service-card, .process-step, .testimonial, .cta-card'
+  // Reveal-on-scroll
+  const targets = document.querySelectorAll(
+    '.section-head, .mascot-card, .service-card, .process-step, .testimonial, .price-card, .final-cta-card'
   );
-  revealTargets.forEach(el => el.classList.add('reveal'));
+  targets.forEach(el => el.classList.add('reveal'));
 
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
-          // light stagger
           entry.target.style.transitionDelay = `${Math.min(i, 4) * 60}ms`;
           entry.target.classList.add('visible');
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -10% 0px' });
-
-    revealTargets.forEach(el => io.observe(el));
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    targets.forEach(el => io.observe(el));
   } else {
-    revealTargets.forEach(el => el.classList.add('visible'));
+    targets.forEach(el => el.classList.add('visible'));
   }
 
-  // Subtle parallax on hero showcase cards
-  const showcase = document.querySelector('.hero-showcase');
-  if (showcase && window.matchMedia('(min-width: 800px)').matches) {
-    const cards = showcase.querySelectorAll('.showcase-card');
-    showcase.addEventListener('mousemove', (e) => {
-      const rect = showcase.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width - 0.5;
-      const y = (e.clientY - rect.top) / rect.height - 0.5;
-      cards.forEach((card, idx) => {
-        const depth = (idx + 1) * 6;
-        const baseRot = card.classList.contains('card-2') ? -9
-          : card.classList.contains('card-3') ? 8 : 0;
-        const tx = card.classList.contains('card-1') ? '-50%' : '0';
-        card.style.transform =
-          `${card.classList.contains('card-1') ? 'translateX(-50%) ' : ''}` +
-          `translate(${x * depth}px, ${y * depth}px) rotate(${baseRot + x * 2}deg)`;
+  // Hero parallax tilt on chibi + stream cards
+  const illust = document.querySelector('.hero-illust');
+  if (illust && window.matchMedia('(min-width: 900px)').matches) {
+    const chibi = illust.querySelector('.chibi-hero');
+    const cards = illust.querySelectorAll('.stream-card');
+    illust.addEventListener('mousemove', (e) => {
+      const r = illust.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top) / r.height - 0.5;
+      if (chibi) chibi.style.transform = `translate(${x * 12}px, ${y * 8}px)`;
+      cards.forEach((card, i) => {
+        const depth = (i + 1) * 6;
+        const baseRot = parseFloat(card.dataset.rot || (card.classList.contains('s2') ? -4 : card.classList.contains('s3') ? 8 : 6));
+        card.dataset.rot = baseRot;
+        card.style.transform = `translate(${x * depth}px, ${y * depth}px) rotate(${baseRot + x * 2}deg)`;
       });
     });
-    showcase.addEventListener('mouseleave', () => {
+    illust.addEventListener('mouseleave', () => {
+      if (chibi) chibi.style.transform = '';
       cards.forEach(card => { card.style.transform = ''; });
     });
   }
 
-  // Smooth-scroll polish for anchors (browsers w/o smooth in CSS)
+  // Smooth-scroll polish
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', (e) => {
       const id = a.getAttribute('href');
       if (id.length > 1) {
-        const target = document.querySelector(id);
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+        const t = document.querySelector(id);
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
       }
     });
   });
+
+  // Active nav highlight on scroll
+  const sections = ['#work', '#services', '#pricing', '#testimonials'].map(id => document.querySelector(id)).filter(Boolean);
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const setActive = () => {
+    let active = null;
+    const y = window.scrollY + 120;
+    sections.forEach(s => { if (s.offsetTop <= y) active = '#' + s.id; });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === (active || '#'));
+    });
+  };
+  window.addEventListener('scroll', setActive, { passive: true });
 })();
