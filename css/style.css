@@ -320,9 +320,17 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spac
 
 .chibi-hero {
   position: relative;
-  width: 280px; height: 360px;
+  width: 320px; height: 400px;
   z-index: 3;
   filter: drop-shadow(0 30px 60px rgba(139, 92, 246, 0.5));
+}
+.chibi-hero .chibi-img {
+  position: relative; z-index: 2;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+  background: rgba(15,16,41,0.4);
+  border: 1px solid rgba(139,92,246,0.3);
 }
 .chibi-hero .glow {
   position: absolute; inset: -40px;
@@ -523,7 +531,15 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spac
   background: radial-gradient(circle at 50% 60%, var(--art-glow, rgba(139,92,246,0.3)) 0%, transparent 70%);
   font-size: 80px;
   filter: drop-shadow(0 6px 12px rgba(0,0,0,0.4));
+  overflow: hidden;
 }
+.mascot-art img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16,1,0.3,1);
+  filter: saturate(1.05);
+}
+.mascot-card:hover .mascot-art img { transform: scale(1.06); }
 .mascot-art .emoji {
   filter: drop-shadow(0 0 16px var(--art-glow-2, rgba(139,92,246,0.6)));
 }
@@ -813,17 +829,27 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spac
 
 .pricing-mascot {
   position: relative;
-  font-size: 200px;
-  text-align: center;
+  width: 280px; aspect-ratio: 1;
+  margin: 0 auto;
   filter: drop-shadow(0 20px 60px rgba(168,85,247,0.5));
 }
+.pricing-mascot-img {
+  position: relative; z-index: 2;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  border-radius: 24px;
+  background: rgba(15,16,41,0.4);
+  border: 1px solid rgba(168,85,247,0.3);
+}
 .magic-circle {
-  position: absolute; inset: 0;
+  position: absolute; inset: -30px;
   background:
-    radial-gradient(circle at center, transparent 30%, rgba(168,85,247,0.1) 31%, rgba(168,85,247,0.1) 32%, transparent 33%),
-    radial-gradient(circle at center, transparent 40%, rgba(236,72,153,0.1) 41%, rgba(236,72,153,0.1) 42%, transparent 43%);
+    radial-gradient(circle at center, transparent 30%, rgba(168,85,247,0.15) 31%, rgba(168,85,247,0.15) 32%, transparent 33%),
+    radial-gradient(circle at center, transparent 40%, rgba(236,72,153,0.15) 41%, rgba(236,72,153,0.15) 42%, transparent 43%),
+    radial-gradient(circle at center, rgba(168,85,247,0.2) 0%, transparent 60%);
   animation: spin 30s linear infinite;
-  z-index: -1;
+  z-index: 1;
+  border-radius: 50%;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
