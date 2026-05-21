@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tdsign — Content Manager</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <style>
+    body { margin: 0; background: #0a0b1e; color: #fff; font-family: system-ui, -apple-system, sans-serif; }
+    #loading {
+      position: fixed; inset: 0; display: grid; place-items: center; z-index: 1000;
+      background: linear-gradient(135deg, #0a0b1e 0%, #1a1230 100%);
+      transition: opacity 0.4s;
+    }
+    #loading.gone { opacity: 0; pointer-events: none; }
+    .load-card {
+      text-align: center; padding: 40px;
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(139,92,246,0.3);
+      border-radius: 20px; backdrop-filter: blur(10px); max-width: 380px;
+    }
+    .load-card h2 { margin: 0 0 8px; font-size: 22px; background: linear-gradient(135deg,#5cb8ff,#a855f7,#ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .load-card p { margin: 0; color: #8a8db5; font-size: 14px; line-height: 1.6; }
+    .spinner { width: 32px; height: 32px; border: 3px solid rgba(139,92,246,0.2); border-top-color: #a855f7; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 18px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+
+  <div id="loading">
+    <div class="load-card">
+      <div class="spinner"></div>
+      <h2>tdsign Content Manager</h2>
+      <p>Loading editor… login dengan akun GitHub <strong>teguh407</strong> kalau diminta.</p>
+    </div>
+  </div>
+
+  <!-- Sveltia CMS (Decap-compatible, faster, native GitHub auth via PKCE) -->
+  <script type="module" src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+
+  <script>
+    // Hide loading splash once the editor is ready (or on first visible iframe).
+    const loading = document.getElementById('loading');
+    const hide = () => loading && loading.classList.add('gone');
+    setTimeout(hide, 2500);
+    window.addEventListener('beforeunload', hide);
+  </script>
+
+</body>
+</html>

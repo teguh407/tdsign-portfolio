@@ -192,20 +192,19 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spac
 }
 
 .nav-links { display: flex; gap: 28px; }
-.nav-links a {
-  font-size: 14px; color: var(--ink-1); font-weight: 500;
-  transition: color 0.2s; position: relative;
-  padding: 4px 0;
-}
+.nav-links a { font-size: 14px; color: var(--ink-1); font-weight: 500; transition: color 0.2s; position: relative; padding: 4px 0; }
 .nav-links a:hover { color: var(--ink-0); }
-.nav-links a.active {
-  color: var(--c-pink-2);
+.nav-links a.active { color: var(--c-pink-2); }
+.nav-links a.active::after { content: ""; position: absolute; bottom: -2px; left: 0; right: 0; height: 2px; background: var(--grad); border-radius: 2px; }
+.nav-links a.admin-link {
+  font-size: 12px;
+  padding: 4px 12px;
+  background: rgba(139,92,246,0.1);
+  border: 1px solid rgba(139,92,246,0.25);
+  border-radius: 100px;
+  color: var(--c-purple-2);
 }
-.nav-links a.active::after {
-  content: ""; position: absolute; bottom: -2px; left: 0; right: 0;
-  height: 2px; background: var(--grad);
-  border-radius: 2px;
-}
+.nav-links a.admin-link:hover { background: rgba(139,92,246,0.2); color: var(--ink-0); }
 
 .nav-cta { padding: 10px 20px; font-size: 13px; }
 

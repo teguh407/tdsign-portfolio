@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "badge": "ANIME DESIGN FOR CREATORS",
+    "title_line1": "Custom Anime Logos",
+    "title_line2": "& Streamer Branding",
+    "subtitle": "I create unique chibi mascot logos and branding for streamers, VTubers, and content creators who want to stand out.",
+    "cta_primary": "View My Work",
+    "cta_secondary": "Start Your Brand",
+    "hero_image": "assets/mascots/hero.jpg"
+  },
+  "stats": [
+    { "value": "200+", "label": "Projects Completed" },
+    { "value": "150+", "label": "Happy Clients" },
+    { "value": "5★",   "label": "Fiverr Rating" },
+    { "value": "100%", "label": "Original Design" }
+  ],
+  "section_titles": {
+    "work_label": "Selected Projects",
+    "work_title_lead": "Featured",
+    "work_title_accent": "Work",
+    "work_sub": "A handful of recent mascot logos shipped to streamers, VTubers, and creators across the world.",
+
+    "services_label": "Services",
+    "services_title_lead": "What",
+    "services_title_accent": "I Offer",
+    "services_sub": "Five core services tuned for streamers, VTubers, and digital creators ready to level up their brand.",
+
+    "process_label": "How It Works",
+    "process_title_lead": "My",
+    "process_title_accent": "Process",
+    "process_sub": "Four calm, deliberate stages — from your first message to final delivery.",
+
+    "testimonials_label": "Testimonials",
+    "testimonials_title_lead": "What",
+    "testimonials_title_accent": "Clients Say",
+    "testimonials_sub": "Real words from streamers and creators I've had the pleasure of working with.",
+
+    "pricing_label": "Pricing",
+    "pricing_title_lead": "Choose Your",
+    "pricing_title_accent": "Package",
+    "pricing_sub": "Simple, fixed pricing. Pick the tier that fits your launch and you're set."
+  },
+  "mascots": [
+    { "name": "Rayzen",  "role": "Chibi Mascot Logo",      "image": "assets/mascots/rayzen.jpg",  "color": "blue" },
+    { "name": "Lunaria", "role": "Twitch Streamer Logo",   "image": "assets/mascots/lunaria.jpg", "color": "violet" },
+    { "name": "Itsuki",  "role": "VTuber Logo Design",     "image": "assets/mascots/itsuki.jpg",  "color": "cyan" },
+    { "name": "Kuma",    "role": "YouTube Content Creator","image": "assets/mascots/kuma.jpg",    "color": "pink" },
+    { "name": "Yami",    "role": "Twitch Streamer Logo",   "image": "assets/mascots/yami.jpg",    "color": "purple" }
+  ],
+  "services": [
+    { "title": "Chibi Mascot Logo", "desc": "Custom anime chibi logo that represents your unique identity.", "icon": "user" },
+    { "title": "Stream Package",    "desc": "Complete stream package with overlay, alerts, panels, and more.", "icon": "monitor" },
+    { "title": "VTuber Branding",   "desc": "Full branding for VTubers including logo, screens, panels, and assets.", "icon": "sparkle" },
+    { "title": "Social Banner",     "desc": "Banners for YouTube, Twitter, Discord, and other platforms.", "icon": "banner" },
+    { "title": "Custom Illustration","desc": "Custom anime illustration for your stream or personal brand.", "icon": "art" }
+  ],
+  "process": [
+    { "num": "01", "title": "Brief",          "desc": "You send me your ideas, references, and details." },
+    { "num": "02", "title": "Sketch",         "desc": "I create a sketch concept based on your brief." },
+    { "num": "03", "title": "Color & Refine", "desc": "I color and refine the design until it's perfect." },
+    { "num": "04", "title": "Final Delivery", "desc": "You receive the final files in high quality." }
+  ],
+  "testimonials": [
+    { "name": "ShadowKaz", "role": "Twitch Streamer",  "flag": "🇺🇸", "initials": "SK", "quote": "Absolutely amazing work! The logo turned out even better than I imagined. Super professional and fast!" },
+    { "name": "LunaVT",    "role": "VTuber",           "flag": "🇯🇵", "initials": "LV", "quote": "tdsign is super talented and easy to work with. My viewers love the new logo and overlays!" },
+    { "name": "KuroNeko",  "role": "YouTube Creator",  "flag": "🇩🇪", "initials": "KN", "quote": "Great communication and unbelievable quality. Will definitely come back for more projects!" }
+  ],
+  "pricing": [
+    {
+      "tier": "Basic", "name": "Basic Logo", "amount": "25", "period": "one-time", "popular": false,
+      "features": ["Chibi Mascot Logo", "High Resolution PNG", "Transparent Background", "1 Revision"],
+      "cta_label": "Order Now"
+    },
+    {
+      "tier": "Streamer", "name": "Streamer Package", "amount": "75", "period": "one-time", "popular": true,
+      "features": ["Chibi Mascot Logo", "Stream Overlay", "Alert Box (5 items)", "Panel (6 items)", "2 Revisions"],
+      "cta_label": "Order Now"
+    },
+    {
+      "tier": "Premium", "name": "Premium Package", "amount": "150", "period": "one-time", "popular": false,
+      "features": ["Everything in Streamer", "Starting / BRB / Ending", "Animated Logo (GIF)", "Custom Emotes (3x)", "3 Revisions"],
+      "cta_label": "Order Now"
+    }
+  ],
+  "pricing_mascot_image": "assets/mascots/wizard.jpg",
+  "final_cta": {
+    "label": "Let's Connect",
+    "title_lead": "Ready To Build Your",
+    "title_accent": "Stream Identity?",
+    "subtitle": "Let's bring your vision to life and create something awesome.",
+    "fiverr_url": "https://fiverr.com/tdsign",
+    "fiverr_label": "Order via Fiverr",
+    "contact_url": "mailto:hello@tdsign.studio",
+    "contact_label": "Contact Me"
+  },
+  "contact": {
+    "discord": "#",
+    "twitter": "#",
+    "instagram": "#",
+    "youtube": "#",
+    "email": "mailto:hello@tdsign.studio"
+  },
+  "footer": {
+    "tagline": "© 2026 tdsign. All rights reserved."
+  }
+}
