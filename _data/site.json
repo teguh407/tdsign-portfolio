@@ -62,6 +62,26 @@
   ],
   "testimonials": [
     {
+      "name": "bmur23", "role": "Verified Fiverr buyer", "country": "Canada", "flag": "🇨🇦",
+      "initials": "BM", "rating": "5.0", "date": "1 month ago", "repeat_client": false,
+      "quote": "Was extremely professional and collaborative. Far exceeded my expectations!"
+    },
+    {
+      "name": "admiralnguyenv", "role": "Verified Fiverr buyer", "country": "United States", "flag": "🇺🇸",
+      "initials": "AN", "rating": "5.0", "date": "3 months ago", "repeat_client": false,
+      "quote": "We were kept informed and updated on the progress of the design. Our feedback was listened to and we are super happy with the results. If you're looking for a logo with some chibi characters, I'd highly recommend this freelancer."
+    },
+    {
+      "name": "davepokebro", "role": "Verified Fiverr buyer", "country": "Canada", "flag": "🇨🇦",
+      "initials": "DP", "rating": "5.0", "date": "7 months ago", "repeat_client": false,
+      "quote": "Good service and fast!"
+    },
+    {
+      "name": "drutango19", "role": "Verified Fiverr buyer", "country": "United States", "flag": "🇺🇸",
+      "initials": "DR", "rating": "5.0", "date": "10 months ago", "repeat_client": false,
+      "quote": "Great experience and very professional. Work is done in a timely manner."
+    },
+    {
       "name": "alex_hrmn", "role": "Verified Fiverr buyer", "country": "Switzerland", "flag": "🇨🇭",
       "initials": "AH", "rating": "5.0", "date": "1 year ago", "repeat_client": false,
       "quote": "Thank you very much for your great work and the great service! Thegu understood quickly and was fast in executing. Also he showed a great sense of style. He was very service-oriented and helpful. The result is great and I'm very happy!"
@@ -72,19 +92,19 @@
       "quote": "I'm so happy with the result, he worked with me until I was happy and satisfied with the result. He is a very great listener and the result came out way better than I expected. It's really worth the price. 5/5 stars. I recommend."
     },
     {
-      "name": "admiralnguyenv", "role": "Verified Fiverr buyer", "country": "United States", "flag": "🇺🇸",
-      "initials": "AN", "rating": "5.0", "date": "3 months ago", "repeat_client": false,
-      "quote": "We were kept informed and updated on the progress of the design. Our feedback was listened to and we are super happy with the results. If you're looking for a logo with some chibi characters, I'd highly recommend this freelancer."
-    },
-    {
       "name": "tylerrushton619", "role": "Repeat client · 2 orders", "country": "United States", "flag": "🇺🇸",
       "initials": "TR", "rating": "5.0", "date": "1 year ago", "repeat_client": true,
       "quote": "Everything was exactly as expected thank you so much!! Looks crazy good thank you so much!"
     },
     {
-      "name": "richrawr", "role": "Verified Fiverr buyer", "country": "United States", "flag": "🇺🇸",
-      "initials": "RR", "rating": "5.0", "date": "3 years ago", "repeat_client": false,
-      "quote": "Patient, understanding, dedicated, and professional. He'll work with you until your idea is exactly the way you want it. Thanks for your work! 👊"
+      "name": "petreavlad", "role": "Verified Fiverr buyer", "country": "Romania", "flag": "🇷🇴",
+      "initials": "PV", "rating": "5.0", "date": "1 year ago", "repeat_client": false,
+      "quote": "Great work, thanks a bunch, it was precisely what I requested."
+    },
+    {
+      "name": "xhaspop", "role": "Verified Fiverr buyer", "country": "Saudi Arabia", "flag": "🇸🇦",
+      "initials": "XH", "rating": "5.0", "date": "2 years ago", "repeat_client": false,
+      "quote": "I really like the work, I ordered a customized logo for my cat so I can use it in my twitch channel, and I like the result so much. Surely I'll come back to the designer for any future projects."
     },
     {
       "name": "hiwaretro", "role": "Verified Fiverr buyer", "country": "Germany", "flag": "🇩🇪",
@@ -97,29 +117,9 @@
       "quote": "Quick and easy contact. Listened well to the suggestions and knew right away how to work out the idea. Multiple images sent to check if it was to my liking. Delivery was done before the date. 100% would recommend."
     },
     {
-      "name": "zachcoco", "role": "Repeat client · 2 orders", "country": "France", "flag": "🇫🇷",
-      "initials": "ZC", "rating": "5.0", "date": "4 years ago", "repeat_client": true,
-      "quote": "Always a pleasure. Everything was perfect like always!"
-    },
-    {
-      "name": "kulutech", "role": "Verified Fiverr buyer", "country": "United States", "flag": "🇺🇸",
-      "initials": "KT", "rating": "4.3", "date": "3 years ago", "repeat_client": false,
-      "quote": "tdsign was great at communicating and keeping you updated on where he was in the process every step of the way. He made changes without any issues and most of all my artwork was brought to life — it looks amazing."
-    },
-    {
-      "name": "mcfbfl", "role": "Repeat client · 2 orders", "country": "United States", "flag": "🇺🇸",
-      "initials": "MC", "rating": "5.0", "date": "3 years ago", "repeat_client": true,
-      "quote": "We made it work. The logo came out amazing. Will come back for more work to be done."
-    },
-    {
-      "name": "marcanine", "role": "Verified Fiverr buyer", "country": "United States", "flag": "🇺🇸",
-      "initials": "MA", "rating": "5.0", "date": "3 years ago", "repeat_client": false,
-      "quote": "Really great artist. Takes direction well and nails it. A++++"
-    },
-    {
-      "name": "nathanpearce990", "role": "Verified Fiverr buyer", "country": "United Kingdom", "flag": "🇬🇧",
-      "initials": "NP", "rating": "5.0", "date": "4 years ago", "repeat_client": false,
-      "quote": "100% understood the assignment, fantastic work!"
+      "name": "dexflex94", "role": "Verified Fiverr buyer", "country": "Netherlands", "flag": "🇳🇱",
+      "initials": "DF", "rating": "5.0", "date": "2 years ago", "repeat_client": false,
+      "quote": "Amazing logo! Quick responding and very patient. Thank you."
     }
   ],
   "pricing": [
