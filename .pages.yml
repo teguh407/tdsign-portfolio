@@ -1,0 +1,168 @@
+media:
+  input: assets/mascots
+  output: /assets/mascots
+  categories: [image]
+
+content:
+  - name: site
+    label: Website Content
+    path: _data/site.json
+    type: file
+    format: json
+    fields:
+
+      # ---------------- Hero ----------------
+      - name: hero
+        label: "Hero Section"
+        type: object
+        fields:
+          - { name: badge,         label: "Badge text",          type: string }
+          - { name: title_line1,   label: "Title — line 1",      type: string }
+          - { name: title_line2,   label: "Title — line 2 (gradient)", type: string }
+          - { name: subtitle,      label: "Subtitle",            type: text }
+          - { name: cta_primary,   label: "Primary CTA label",   type: string }
+          - { name: cta_secondary, label: "Secondary CTA label", type: string }
+          - { name: hero_image,    label: "Hero image",          type: image }
+
+      # ---------------- Stats ----------------
+      - name: stats
+        label: "Stats (4 metrics)"
+        type: object
+        list: { min: 4, max: 4 }
+        fields:
+          - { name: value, label: Value, type: string }
+          - { name: label, label: Label, type: string }
+
+      # ---------------- Section titles ----------------
+      - name: section_titles
+        label: "Section Titles"
+        type: object
+        fields:
+          - { name: work_label,            label: "Work — label",           type: string }
+          - { name: work_title_lead,       label: "Work — title lead",      type: string }
+          - { name: work_title_accent,     label: "Work — title accent (gradient)", type: string }
+          - { name: work_sub,              label: "Work — subtitle",        type: text }
+
+          - { name: services_label,        label: "Services — label",       type: string }
+          - { name: services_title_lead,   label: "Services — title lead",  type: string }
+          - { name: services_title_accent, label: "Services — title accent",type: string }
+          - { name: services_sub,          label: "Services — subtitle",    type: text }
+
+          - { name: process_label,         label: "Process — label",        type: string }
+          - { name: process_title_lead,    label: "Process — title lead",   type: string }
+          - { name: process_title_accent,  label: "Process — title accent", type: string }
+          - { name: process_sub,           label: "Process — subtitle",     type: text }
+
+          - { name: testimonials_label,        label: "Testimonials — label",        type: string }
+          - { name: testimonials_title_lead,   label: "Testimonials — title lead",   type: string }
+          - { name: testimonials_title_accent, label: "Testimonials — title accent", type: string }
+          - { name: testimonials_sub,          label: "Testimonials — subtitle",     type: text }
+
+          - { name: pricing_label,         label: "Pricing — label",        type: string }
+          - { name: pricing_title_lead,    label: "Pricing — title lead",   type: string }
+          - { name: pricing_title_accent,  label: "Pricing — title accent", type: string }
+          - { name: pricing_sub,           label: "Pricing — subtitle",     type: text }
+
+      # ---------------- Mascots ----------------
+      - name: mascots
+        label: "Featured Mascots (drag to reorder)"
+        type: object
+        list: true
+        fields:
+          - { name: name,  label: Name,  type: string }
+          - { name: role,  label: Role,  type: string }
+          - { name: image, label: Image, type: image }
+          - name: color
+            label: "Glow color"
+            type: select
+            options:
+              values: [blue, violet, cyan, pink, purple]
+            default: blue
+
+      # ---------------- Services ----------------
+      - name: services
+        label: "Services (drag to reorder)"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title,       type: string }
+          - { name: desc,  label: Description, type: text }
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values: [user, monitor, sparkle, banner, art]
+            default: user
+
+      # ---------------- Process ----------------
+      - name: process
+        label: "Process Steps"
+        type: object
+        list: { min: 4, max: 4 }
+        fields:
+          - { name: num,   label: "Number",      type: string }
+          - { name: title, label: "Title",       type: string }
+          - { name: desc,  label: "Description", type: text }
+
+      # ---------------- Testimonials ----------------
+      - name: testimonials
+        label: "Testimonials (drag to reorder)"
+        type: object
+        list: true
+        fields:
+          - { name: name,     label: Name,                 type: string }
+          - { name: role,     label: Role,                 type: string }
+          - { name: flag,     label: "Flag emoji (🇺🇸 🇯🇵 dll)", type: string }
+          - { name: initials, label: "Avatar initials (max 3)",  type: string }
+          - { name: quote,    label: Quote,                type: text }
+
+      # ---------------- Pricing ----------------
+      - name: pricing
+        label: "Pricing Tiers (drag to reorder)"
+        type: object
+        list: { min: 1, max: 5 }
+        fields:
+          - { name: tier,      label: "Tier label",           type: string }
+          - { name: name,      label: "Package name",         type: string }
+          - { name: amount,    label: "Amount (numeric)",     type: string }
+          - { name: period,    label: "Period",               type: string, default: "one-time" }
+          - { name: popular,   label: "Most Popular badge?",  type: boolean, default: false }
+          - name: features
+            label: "Features list"
+            type: string
+            list: true
+          - { name: cta_label, label: "CTA Button label",     type: string, default: "Order Now" }
+
+      - { name: pricing_mascot_image, label: "Pricing section mascot image", type: image }
+
+      # ---------------- Final CTA ----------------
+      - name: final_cta
+        label: "Final CTA Block"
+        type: object
+        fields:
+          - { name: label,         label: "Eyebrow label",          type: string }
+          - { name: title_lead,    label: "Title — lead",           type: string }
+          - { name: title_accent,  label: "Title — accent (gradient)", type: string }
+          - { name: subtitle,      label: "Subtitle",               type: text }
+          - { name: fiverr_url,    label: "Fiverr URL",             type: string }
+          - { name: fiverr_label,  label: "Fiverr label",           type: string }
+          - { name: contact_url,   label: "Contact URL",            type: string }
+          - { name: contact_label, label: "Contact label",          type: string }
+
+      # ---------------- Contact ----------------
+      - name: contact
+        label: "Social & Contact Links"
+        type: object
+        fields:
+          - { name: discord,   label: Discord,   type: string }
+          - { name: twitter,   label: Twitter,   type: string }
+          - { name: instagram, label: Instagram, type: string }
+          - { name: youtube,   label: YouTube,   type: string }
+          - { name: email,     label: "Email (use mailto:...)", type: string }
+
+      # ---------------- Footer ----------------
+      - name: footer
+        label: "Footer"
+        type: object
+        fields:
+          - { name: tagline, label: "Tagline / copyright", type: string }

@@ -3,47 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tdsign — Content Manager</title>
+  <title>tdsign — Admin</title>
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <meta http-equiv="refresh" content="0;url=https://app.pagescms.org/teguh407/tdsign-portfolio/main" />
   <style>
-    body { margin: 0; background: #0a0b1e; color: #fff; font-family: system-ui, -apple-system, sans-serif; }
-    #loading {
-      position: fixed; inset: 0; display: grid; place-items: center; z-index: 1000;
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center;
       background: linear-gradient(135deg, #0a0b1e 0%, #1a1230 100%);
-      transition: opacity 0.4s;
-    }
-    #loading.gone { opacity: 0; pointer-events: none; }
-    .load-card {
-      text-align: center; padding: 40px;
+      color: #fff; font-family: system-ui, -apple-system, sans-serif; padding: 24px; }
+    .card {
+      max-width: 520px; padding: 40px 36px; text-align: center;
       background: rgba(255,255,255,0.04); border: 1px solid rgba(139,92,246,0.3);
-      border-radius: 20px; backdrop-filter: blur(10px); max-width: 380px;
+      border-radius: 22px; backdrop-filter: blur(10px);
     }
-    .load-card h2 { margin: 0 0 8px; font-size: 22px; background: linear-gradient(135deg,#5cb8ff,#a855f7,#ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .load-card p { margin: 0; color: #8a8db5; font-size: 14px; line-height: 1.6; }
-    .spinner { width: 32px; height: 32px; border: 3px solid rgba(139,92,246,0.2); border-top-color: #a855f7; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 18px; }
-    @keyframes spin { to { transform: rotate(360deg); } }
+    h1 { margin: 0 0 8px; font-size: 26px;
+      background: linear-gradient(135deg,#5cb8ff,#a855f7,#ec4899);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    p  { margin: 0 0 8px; color: #cdd0e8; font-size: 14.5px; line-height: 1.65; }
+    .small { font-size: 12.5px; color: #8a8db5; margin-top: 18px; }
+    a.btn {
+      display: inline-block; margin-top: 20px;
+      padding: 12px 26px; border-radius: 100px;
+      background: linear-gradient(135deg,#3b82f6,#8b5cf6); color: #fff;
+      text-decoration: none; font-weight: 600; font-size: 14px;
+      box-shadow: 0 8px 30px -6px rgba(139,92,246,0.55);
+    }
+    code { background: rgba(139,92,246,0.15); padding: 2px 8px; border-radius: 6px; font-size: 12.5px; }
+    .step { text-align: left; margin: 14px 0; padding: 12px 16px;
+      background: rgba(255,255,255,0.03); border-left: 3px solid #a855f7;
+      border-radius: 8px; font-size: 13.5px; color: #cdd0e8; }
+    .step b { color: #fff; }
   </style>
 </head>
 <body>
+  <div class="card">
+    <h1>tdsign Content Manager</h1>
+    <p>Redirecting kamu ke <strong>Pages CMS</strong> editor…</p>
 
-  <div id="loading">
-    <div class="load-card">
-      <div class="spinner"></div>
-      <h2>tdsign Content Manager</h2>
-      <p>Loading editor… login dengan akun GitHub <strong>teguh407</strong> kalau diminta.</p>
+    <div class="step">
+      <b>1.</b> Login pakai akun GitHub <code>teguh407</code>
     </div>
+    <div class="step">
+      <b>2.</b> Kalau pertama kali, install <b>Pages CMS app</b> ke repo <code>tdsign-portfolio</code>
+      <br/><small style="color:#8a8db5">(sekali install, abis itu auto)</small>
+    </div>
+    <div class="step">
+      <b>3.</b> Edit teks/gambar/harga → klik <b>Save</b> → live dalam 30 detik
+    </div>
+
+    <a class="btn" href="https://app.pagescms.org/teguh407/tdsign-portfolio/main">Open Editor →</a>
+    <p class="small">
+      Kalau auto-redirect gak jalan, klik tombol di atas.
+    </p>
   </div>
-
-  <!-- Sveltia CMS (Decap-compatible, faster, native GitHub auth via PKCE) -->
-  <script type="module" src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
-
-  <script>
-    // Hide loading splash once the editor is ready (or on first visible iframe).
-    const loading = document.getElementById('loading');
-    const hide = () => loading && loading.classList.add('gone');
-    setTimeout(hide, 2500);
-    window.addEventListener('beforeunload', hide);
-  </script>
-
 </body>
 </html>
