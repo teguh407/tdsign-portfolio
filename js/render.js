@@ -100,16 +100,32 @@
     document.querySelector('[data-bind="testimonials.title"]').innerHTML = heading(items.title_lead, items.title_accent);
     document.querySelector('[data-bind="testimonials.sub"]').textContent = items.sub;
 
+    const stars = (r) => {
+      const n = parseFloat(r) || 5;
+      const full = Math.round(n);
+      return '★'.repeat(full) + '☆'.repeat(Math.max(0, 5 - full));
+    };
+
     document.querySelector('[data-bind="testimonials"]').innerHTML = items.list.map(t => `
-      <blockquote class="testimonial">
-        <div class="t-quote">"</div>
-        <div class="t-stars">★★★★★</div>
+      <blockquote class="testimonial${t.repeat_client ? ' is-repeat' : ''}">
+        ${t.repeat_client ? '<span class="t-badge-repeat">Repeat Client</span>' : ''}
+        <div class="t-head-row">
+          <div class="t-stars">${stars(t.rating)}</div>
+          <div class="t-rating">${esc(t.rating || '5.0')}</div>
+        </div>
         <p>${esc(t.quote)}</p>
         <footer class="t-foot">
           <div class="t-avatar">${esc(t.initials)}</div>
-          <div>
-            <div class="t-name">${esc(t.name)} <span class="t-flag">${esc(t.flag)}</span></div>
-            <div class="t-role">${esc(t.role)}</div>
+          <div class="t-id">
+            <div class="t-name">${esc(t.name)} <span class="t-flag">${esc(t.flag || '')}</span></div>
+            <div class="t-meta">
+              <span class="t-country">${esc(t.country || t.role || '')}</span>
+              ${t.date ? `<span class="t-dot">·</span><span class="t-date">${esc(t.date)}</span>` : ''}
+            </div>
+          </div>
+          <div class="t-verified" title="Verified Fiverr buyer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            <span>Verified</span>
           </div>
         </footer>
       </blockquote>`).join('');

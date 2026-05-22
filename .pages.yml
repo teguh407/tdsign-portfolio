@@ -110,11 +110,15 @@ content:
         type: object
         list: true
         fields:
-          - { name: name,     label: Name,                 type: string }
-          - { name: role,     label: Role,                 type: string }
-          - { name: flag,     label: "Flag emoji (🇺🇸 🇯🇵 dll)", type: string }
-          - { name: initials, label: "Avatar initials (max 3)",  type: string }
-          - { name: quote,    label: Quote,                type: text }
+          - { name: name,          label: "Buyer username",     type: string }
+          - { name: role,          label: "Role / line",        type: string, default: "Verified Fiverr buyer" }
+          - { name: country,       label: "Country",            type: string }
+          - { name: flag,          label: "Flag emoji",         type: string }
+          - { name: initials,      label: "Avatar initials",    type: string }
+          - { name: rating,        label: "Rating (e.g. 5.0)",  type: string, default: "5.0" }
+          - { name: date,          label: "Date (e.g. 1 year ago)", type: string }
+          - { name: repeat_client, label: "Repeat client badge?", type: boolean, default: false }
+          - { name: quote,         label: Quote,                type: text }
 
       # ---------------- Pricing ----------------
       - name: pricing

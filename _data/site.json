@@ -9,10 +9,10 @@
     "hero_image": "assets/mascots/hero.jpg"
   },
   "stats": [
-    { "value": "200+", "label": "Projects Completed" },
-    { "value": "150+", "label": "Happy Clients" },
-    { "value": "5★",   "label": "Fiverr Rating" },
-    { "value": "100%", "label": "Original Design" }
+    { "value": "50+",  "label": "Verified Reviews" },
+    { "value": "4.95★","label": "Avg Fiverr Rating" },
+    { "value": "18+",  "label": "Countries Served" },
+    { "value": "4yrs", "label": "On Fiverr" }
   ],
   "section_titles": {
     "work_label": "Selected Projects",
@@ -31,9 +31,9 @@
     "process_sub": "Four calm, deliberate stages — from your first message to final delivery.",
 
     "testimonials_label": "Testimonials",
-    "testimonials_title_lead": "What",
-    "testimonials_title_accent": "Clients Say",
-    "testimonials_sub": "Real words from streamers and creators I've had the pleasure of working with.",
+    "testimonials_title_lead": "Verified",
+    "testimonials_title_accent": "Reviews",
+    "testimonials_sub": "50+ five-star reviews from real Fiverr buyers across 18 countries — every quote below is verbatim from my Fiverr profile.",
 
     "pricing_label": "Pricing",
     "pricing_title_lead": "Choose Your",
@@ -61,9 +61,66 @@
     { "num": "04", "title": "Final Delivery", "desc": "You receive the final files in high quality." }
   ],
   "testimonials": [
-    { "name": "ShadowKaz", "role": "Twitch Streamer",  "flag": "🇺🇸", "initials": "SK", "quote": "Absolutely amazing work! The logo turned out even better than I imagined. Super professional and fast!" },
-    { "name": "LunaVT",    "role": "VTuber",           "flag": "🇯🇵", "initials": "LV", "quote": "tdsign is super talented and easy to work with. My viewers love the new logo and overlays!" },
-    { "name": "KuroNeko",  "role": "YouTube Creator",  "flag": "🇩🇪", "initials": "KN", "quote": "Great communication and unbelievable quality. Will definitely come back for more projects!" }
+    {
+      "name": "alex_hrmn", "role": "Verified Fiverr buyer", "country": "Switzerland", "flag": "🇨🇭",
+      "initials": "AH", "rating": "5.0", "date": "1 year ago", "repeat_client": false,
+      "quote": "Thank you very much for your great work and the great service! Thegu understood quickly and was fast in executing. Also he showed a great sense of style. He was very service-oriented and helpful. The result is great and I'm very happy!"
+    },
+    {
+      "name": "tfiftyone", "role": "Verified Fiverr buyer", "country": "Sweden", "flag": "🇸🇪",
+      "initials": "TF", "rating": "5.0", "date": "1 year ago", "repeat_client": false,
+      "quote": "I'm so happy with the result, he worked with me until I was happy and satisfied with the result. He is a very great listener and the result came out way better than I expected. It's really worth the price. 5/5 stars. I recommend."
+    },
+    {
+      "name": "admiralnguyenv", "role": "Verified Fiverr buyer", "country": "United States", "flag": "🇺🇸",
+      "initials": "AN", "rating": "5.0", "date": "3 months ago", "repeat_client": false,
+      "quote": "We were kept informed and updated on the progress of the design. Our feedback was listened to and we are super happy with the results. If you're looking for a logo with some chibi characters, I'd highly recommend this freelancer."
+    },
+    {
+      "name": "tylerrushton619", "role": "Repeat client · 2 orders", "country": "United States", "flag": "🇺🇸",
+      "initials": "TR", "rating": "5.0", "date": "1 year ago", "repeat_client": true,
+      "quote": "Everything was exactly as expected thank you so much!! Looks crazy good thank you so much!"
+    },
+    {
+      "name": "richrawr", "role": "Verified Fiverr buyer", "country": "United States", "flag": "🇺🇸",
+      "initials": "RR", "rating": "5.0", "date": "3 years ago", "repeat_client": false,
+      "quote": "Patient, understanding, dedicated, and professional. He'll work with you until your idea is exactly the way you want it. Thanks for your work! 👊"
+    },
+    {
+      "name": "hiwaretro", "role": "Verified Fiverr buyer", "country": "Germany", "flag": "🇩🇪",
+      "initials": "HW", "rating": "5.0", "date": "2 years ago", "repeat_client": false,
+      "quote": "Very fast delivery and excellent service! We ordered as a group of 11 and all were satisfied. I highly recommend this artist."
+    },
+    {
+      "name": "bulbasprout", "role": "Verified Fiverr buyer", "country": "Netherlands", "flag": "🇳🇱",
+      "initials": "BS", "rating": "4.7", "date": "2 years ago", "repeat_client": false,
+      "quote": "Quick and easy contact. Listened well to the suggestions and knew right away how to work out the idea. Multiple images sent to check if it was to my liking. Delivery was done before the date. 100% would recommend."
+    },
+    {
+      "name": "zachcoco", "role": "Repeat client · 2 orders", "country": "France", "flag": "🇫🇷",
+      "initials": "ZC", "rating": "5.0", "date": "4 years ago", "repeat_client": true,
+      "quote": "Always a pleasure. Everything was perfect like always!"
+    },
+    {
+      "name": "kulutech", "role": "Verified Fiverr buyer", "country": "United States", "flag": "🇺🇸",
+      "initials": "KT", "rating": "4.3", "date": "3 years ago", "repeat_client": false,
+      "quote": "tdsign was great at communicating and keeping you updated on where he was in the process every step of the way. He made changes without any issues and most of all my artwork was brought to life — it looks amazing."
+    },
+    {
+      "name": "mcfbfl", "role": "Repeat client · 2 orders", "country": "United States", "flag": "🇺🇸",
+      "initials": "MC", "rating": "5.0", "date": "3 years ago", "repeat_client": true,
+      "quote": "We made it work. The logo came out amazing. Will come back for more work to be done."
+    },
+    {
+      "name": "marcanine", "role": "Verified Fiverr buyer", "country": "United States", "flag": "🇺🇸",
+      "initials": "MA", "rating": "5.0", "date": "3 years ago", "repeat_client": false,
+      "quote": "Really great artist. Takes direction well and nails it. A++++"
+    },
+    {
+      "name": "nathanpearce990", "role": "Verified Fiverr buyer", "country": "United Kingdom", "flag": "🇬🇧",
+      "initials": "NP", "rating": "5.0", "date": "4 years ago", "repeat_client": false,
+      "quote": "100% understood the assignment, fantastic work!"
+    }
   ],
   "pricing": [
     {
@@ -88,7 +145,7 @@
     "title_lead": "Ready To Build Your",
     "title_accent": "Stream Identity?",
     "subtitle": "Let's bring your vision to life and create something awesome.",
-    "fiverr_url": "https://fiverr.com/tdsign",
+    "fiverr_url": "https://www.fiverr.com/tdsign",
     "fiverr_label": "Order via Fiverr",
     "contact_url": "mailto:hello@tdsign.studio",
     "contact_label": "Contact Me"
